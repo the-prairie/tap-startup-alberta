@@ -1,0 +1,19 @@
+version: 1
+send_anonymous_usage_stats: true
+project_id: 1d929524-1f08-4019-ba1d-996adf2e63ef
+plugins:
+  extractors:
+  - name: tap-startup-alberta
+    namespace: tap_startup_alberta
+    executable: ./tap-startup-alberta.sh
+    capabilities:
+    - state
+    - catalog
+    - discover
+    config:
+      token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlY29zeXN0ZW0uc3RhcnRhbGJlcnRhLmNhIiwiaXNzIjoiZGVhbHJvb20uY28iLCJpYXQiOjE2MzkwNzUyNzgsImV4cCI6MTY0MTc1MzY3OCwibmJmIjoxNjM5MDc1Mjc4LCJ1c2VySWQiOjM1ODcxOTF9.L3cwtmSj0Jbhbpmpi0FwiT4KWN-nVb5jiLGtQ41VMlY"
+      app_id: "250521027"
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl

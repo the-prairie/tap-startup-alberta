@@ -1,0 +1,736 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "id": "http://example.com/example.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "id": "#/properties/id",
+            "type": "integer"
+        },
+        "angellist_url": {
+            "id": "#/properties/angellist_url",
+            "type": "string"
+        },
+        "appstore_app_id": {
+            "id": "#/properties/appstore_app_id",
+            "type": "string"
+        },
+        "client_focus": {
+            "id": "#/properties/client_focus",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "id": "#/properties/client_focus/items",
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "id": "#/properties/client_focus/items/properties/name",
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": true
+            }
+        },
+        "company_status": {
+            "id": "#/properties/company_status",
+            "type": "string"
+        },
+        "core_side_value": {
+            "id": "#/properties/core_side_value",
+            "type": "string"
+        },
+        "corporate_industries": {
+            "id": "#/properties/corporate_industries",
+            "type": "array",
+            "additionalItems": true
+        },
+        "create_date": {
+            "id": "#/properties/create_date",
+            "type": "string"
+        },
+        "crunchbase_url": {
+            "id": "#/properties/crunchbase_url",
+            "type": "string"
+        },
+        "employee_12_months_growth_delta": {
+            "id": "#/properties/employee_12_months_growth_delta",
+            "type": "string"
+        },
+        "employee_12_months_growth_percentile": {
+            "id": "#/properties/employee_12_months_growth_percentile",
+            "type": "string"
+        },
+        "employee_12_months_growth_relative": {
+            "id": "#/properties/employee_12_months_growth_relative",
+            "type": "string"
+        },
+        "employee_12_months_growth_unique": {
+            "id": "#/properties/employee_12_months_growth_unique",
+            "type": "string"
+        },
+        "employee_3_months_growth_delta": {
+            "id": "#/properties/employee_3_months_growth_delta",
+            "type": "string"
+        },
+        "employee_3_months_growth_percentile": {
+            "id": "#/properties/employee_3_months_growth_percentile",
+            "type": "string"
+        },
+        "employee_3_months_growth_relative": {
+            "id": "#/properties/employee_3_months_growth_relative",
+            "type": "string"
+        },
+        "employee_3_months_growth_unique": {
+            "id": "#/properties/employee_3_months_growth_unique",
+            "type": "string"
+        },
+        "employee_6_months_growth_delta": {
+            "id": "#/properties/employee_6_months_growth_delta",
+            "type": "string"
+        },
+        "employee_6_months_growth_percentile": {
+            "id": "#/properties/employee_6_months_growth_percentile",
+            "type": "string"
+        },
+        "employee_6_months_growth_relative": {
+            "id": "#/properties/employee_6_months_growth_relative",
+            "type": "string"
+        },
+        "employee_6_months_growth_unique": {
+            "id": "#/properties/employee_6_months_growth_unique",
+            "type": "string"
+        },
+        "employees_chart": {
+            "id": "#/properties/employees_chart",
+            "type": "array",
+            "additionalItems": true
+        },
+        "employees_latest": {
+            "id": "#/properties/employees_latest",
+            "type": "string"
+        },
+        "employees": {
+            "id": "#/properties/employees",
+            "type": "string"
+        },
+        "entity_sub_types": {
+            "id": "#/properties/entity_sub_types",
+            "type": "array",
+            "additionalItems": true
+        },
+        "facebook_url": {
+            "id": "#/properties/facebook_url",
+            "type": "string"
+        },
+        "founders_score_cumulated": {
+            "id": "#/properties/founders_score_cumulated",
+            "type": "integer"
+        },
+        "founders": {
+            "id": "#/properties/founders",
+            "type": "array",
+            "additionalItems": true
+        },
+        "founders_top_university": {
+            "id": "#/properties/founders_top_university",
+            "type": "string"
+        },
+        "founders_top_past_companies": {
+            "id": "#/properties/founders_top_past_companies",
+            "type": "string"
+        },
+        "fundings": {
+            "id": "#/properties/fundings",
+            "type": "object",
+            "properties": {
+                "items": {
+                    "id": "#/properties/fundings/properties/items",
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "id": "#/properties/fundings/properties/items/items",
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "id": "#/properties/fundings/properties/items/items/properties/id",
+                                "type": "integer"
+                            },
+                            "year": {
+                                "id": "#/properties/fundings/properties/items/items/properties/year",
+                                "type": "integer"
+                            },
+                            "month": {
+                                "id": "#/properties/fundings/properties/items/items/properties/month",
+                                "type": "integer"
+                            },
+                            "amount": {
+                                "id": "#/properties/fundings/properties/items/items/properties/amount",
+                                "type": "integer"
+                            },
+                            "currency": {
+                                "id": "#/properties/fundings/properties/items/items/properties/currency",
+                                "type": "string"
+                            },
+                            "round": {
+                                "id": "#/properties/fundings/properties/items/items/properties/round",
+                                "type": "string"
+                            },
+                            "investors": {
+                                "id": "#/properties/fundings/properties/items/items/properties/investors",
+                                "type": "array",
+                                "additionalItems": true
+                            },
+                            "unknown_investors": {
+                                "id": "#/properties/fundings/properties/items/items/properties/unknown_investors",
+                                "type": "array",
+                                "additionalItems": true
+                            },
+                            "is_undisclosed": {
+                                "id": "#/properties/fundings/properties/items/items/properties/is_undisclosed",
+                                "type": "string"
+                            },
+                            "news_source": {
+                                "id": "#/properties/fundings/properties/items/items/properties/news_source",
+                                "type": "string"
+                            },
+                            "valuation": {
+                                "id": "#/properties/fundings/properties/items/items/properties/valuation",
+                                "type": "string"
+                            },
+                            "valuation_generated_min": {
+                                "id": "#/properties/fundings/properties/items/items/properties/valuation_generated_min",
+                                "type": "string"
+                            },
+                            "valuation_generated_max": {
+                                "id": "#/properties/fundings/properties/items/items/properties/valuation_generated_max",
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                },
+                "total": {
+                    "id": "#/properties/fundings/properties/total",
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": true
+        },
+        "growth_stage": {
+            "id": "#/properties/growth_stage",
+            "type": "string"
+        },
+        "has_strong_founder": {
+            "id": "#/properties/has_strong_founder",
+            "type": "string"
+        },
+        "has_super_founder": {
+            "id": "#/properties/has_super_founder",
+            "type": "string"
+        },
+        "has_promising_founder": {
+            "id": "#/properties/has_promising_founder",
+            "type": "string"
+        },
+        "hq_locations": {
+            "id": "#/properties/hq_locations",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "id": "#/properties/hq_locations/items",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "id": "#/properties/hq_locations/items/properties/id",
+                        "type": "integer"
+                    },
+                    "address": {
+                        "id": "#/properties/hq_locations/items/properties/address",
+                        "type": "string"
+                    },
+                    "street": {
+                        "id": "#/properties/hq_locations/items/properties/street",
+                        "type": "string"
+                    },
+                    "street_number": {
+                        "id": "#/properties/hq_locations/items/properties/street_number",
+                        "type": "string"
+                    },
+                    "zip": {
+                        "id": "#/properties/hq_locations/items/properties/zip",
+                        "type": "string"
+                    },
+                    "lat": {
+                        "id": "#/properties/hq_locations/items/properties/lat",
+                        "type": "number"
+                    },
+                    "lon": {
+                        "id": "#/properties/hq_locations/items/properties/lon",
+                        "type": "number"
+                    },
+                    "country": {
+                        "id": "#/properties/hq_locations/items/properties/country",
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "id": "#/properties/hq_locations/items/properties/country/properties/id",
+                                "type": "integer"
+                            },
+                            "name": {
+                                "id": "#/properties/hq_locations/items/properties/country/properties/name",
+                                "type": "string"
+                            },
+                            "lat": {
+                                "id": "#/properties/hq_locations/items/properties/country/properties/lat",
+                                "type": "number"
+                            },
+                            "lon": {
+                                "id": "#/properties/hq_locations/items/properties/country/properties/lon",
+                                "type": "number"
+                            },
+                            "trade_register_office": {
+                                "id": "#/properties/hq_locations/items/properties/country/properties/trade_register_office",
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    "city": {
+                        "id": "#/properties/hq_locations/items/properties/city",
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "id": "#/properties/hq_locations/items/properties/city/properties/id",
+                                "type": "integer"
+                            },
+                            "name": {
+                                "id": "#/properties/hq_locations/items/properties/city/properties/name",
+                                "type": "string"
+                            },
+                            "lat": {
+                                "id": "#/properties/hq_locations/items/properties/city/properties/lat",
+                                "type": "number"
+                            },
+                            "lon": {
+                                "id": "#/properties/hq_locations/items/properties/city/properties/lon",
+                                "type": "number"
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    "continent": {
+                        "id": "#/properties/hq_locations/items/properties/continent",
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "id": "#/properties/hq_locations/items/properties/continent/properties/id",
+                                "type": "integer"
+                            },
+                            "name": {
+                                "id": "#/properties/hq_locations/items/properties/continent/properties/name",
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    "is_headquarters": {
+                        "id": "#/properties/hq_locations/items/properties/is_headquarters",
+                        "type": "string"
+                    },
+                    "is_founding_location": {
+                        "id": "#/properties/hq_locations/items/properties/is_founding_location",
+                        "type": "string"
+                    },
+                    "trade_register_number": {
+                        "id": "#/properties/hq_locations/items/properties/trade_register_number",
+                        "type": "string"
+                    },
+                    "state": {
+                        "id": "#/properties/hq_locations/items/properties/state",
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "id": "#/properties/hq_locations/items/properties/state/properties/id",
+                                "type": "integer"
+                            },
+                            "name": {
+                                "id": "#/properties/hq_locations/items/properties/state/properties/name",
+                                "type": "string"
+                            },
+                            "lat": {
+                                "id": "#/properties/hq_locations/items/properties/state/properties/lat",
+                                "type": "integer"
+                            },
+                            "lon": {
+                                "id": "#/properties/hq_locations/items/properties/state/properties/lon",
+                                "type": "number"
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                },
+                "additionalProperties": true
+            }
+        },
+        "images": {
+            "id": "#/properties/images",
+            "type": "object",
+            "properties": {
+                "32x32": {
+                    "id": "#/properties/images/properties/32x32",
+                    "type": "string"
+                },
+                "74x74": {
+                    "id": "#/properties/images/properties/74x74",
+                    "type": "string"
+                },
+                "100x100": {
+                    "id": "#/properties/images/properties/100x100",
+                    "type": "string"
+                }
+            },
+            "additionalProperties": true
+        },
+        "income_streams": {
+            "id": "#/properties/income_streams",
+            "type": "array",
+            "additionalItems": true
+        },
+        "industries": {
+            "id": "#/properties/industries",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "id": "#/properties/industries/items",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "id": "#/properties/industries/items/properties/id",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "id": "#/properties/industries/items/properties/name",
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": true
+            }
+        },
+        "innovations": {
+            "id": "#/properties/innovations",
+            "type": "array",
+            "additionalItems": true
+        },
+        "innovations_count": {
+            "id": "#/properties/innovations_count",
+            "type": "integer"
+        },
+        "investments": {
+            "id": "#/properties/investments",
+            "type": "object",
+            "properties": {
+                "items": {
+                    "id": "#/properties/investments/properties/items",
+                    "type": "array",
+                    "additionalItems": true,
+                    "items": {
+                        "id": "#/properties/investments/properties/items/items",
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "id": "#/properties/investments/properties/items/items/properties/id",
+                                "type": "integer"
+                            },
+                            "name": {
+                                "id": "#/properties/investments/properties/items/items/properties/name",
+                                "type": "string"
+                            },
+                            "type": {
+                                "id": "#/properties/investments/properties/items/items/properties/type",
+                                "type": "string"
+                            },
+                            "path": {
+                                "id": "#/properties/investments/properties/items/items/properties/path",
+                                "type": "string"
+                            },
+                            "exited": {
+                                "id": "#/properties/investments/properties/items/items/properties/exited",
+                                "type": "string"
+                            },
+                            "lead": {
+                                "id": "#/properties/investments/properties/items/items/properties/lead",
+                                "type": "string"
+                            },
+                            "images": {
+                                "id": "#/properties/investments/properties/items/items/properties/images",
+                                "type": "object",
+                                "properties": {
+                                    "100x100": {
+                                        "id": "#/properties/investments/properties/items/items/properties/images/properties/100x100",
+                                        "type": "string"
+                                    },
+                                    "74x74": {
+                                        "id": "#/properties/investments/properties/items/items/properties/images/properties/74x74",
+                                        "type": "string"
+                                    },
+                                    "32x32": {
+                                        "id": "#/properties/investments/properties/items/items/properties/images/properties/32x32",
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                },
+                "total": {
+                    "id": "#/properties/investments/properties/total",
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": true
+        },
+        "investors": {
+            "id": "#/properties/investors",
+            "type": "object",
+            "properties": {
+                "items": {
+                    "id": "#/properties/investors/properties/items",
+                    "type": "array",
+                    "additionalItems": true
+                },
+                "total": {
+                    "id": "#/properties/investors/properties/total",
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": true
+        },
+        "is_editorial": {
+            "id": "#/properties/is_editorial",
+            "type": "string"
+        },
+        "is_ai_data": {
+            "id": "#/properties/is_ai_data",
+            "type": "string"
+        },
+        "is_from_traderegister": {
+            "id": "#/properties/is_from_traderegister",
+            "type": "string"
+        },
+        "latest_revenue_enhanced": {
+            "id": "#/properties/latest_revenue_enhanced",
+            "type": "string"
+        },
+        "latest_valuation_enhanced": {
+            "id": "#/properties/latest_valuation_enhanced",
+            "type": "string"
+        },
+        "launch_month": {
+            "id": "#/properties/launch_month",
+            "type": "integer"
+        },
+        "launch_year": {
+            "id": "#/properties/launch_year",
+            "type": "integer"
+        },
+        "linkedin_url": {
+            "id": "#/properties/linkedin_url",
+            "type": "string"
+        },
+        "lists_ids": {
+            "id": "#/properties/lists_ids",
+            "type": "array",
+            "additionalItems": true
+        },
+        "matching_score": {
+            "id": "#/properties/matching_score",
+            "type": "string"
+        },
+        "name": {
+            "id": "#/properties/name",
+            "type": "string"
+        },
+        "participated_events": {
+            "id": "#/properties/participated_events",
+            "type": "object",
+            "properties": {
+                "items": {
+                    "id": "#/properties/participated_events/properties/items",
+                    "type": "array",
+                    "additionalItems": true
+                },
+                "total": {
+                    "id": "#/properties/participated_events/properties/total",
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": true
+        },
+        "past_founders_raised_10m": {
+            "id": "#/properties/past_founders_raised_10m",
+            "type": "integer"
+        },
+        "past_founders": {
+            "id": "#/properties/past_founders",
+            "type": "integer"
+        },
+        "path": {
+            "id": "#/properties/path",
+            "type": "string"
+        },
+        "playmarket_app_id": {
+            "id": "#/properties/playmarket_app_id",
+            "type": "string"
+        },
+        "revenues": {
+            "id": "#/properties/revenues",
+            "type": "array",
+            "additionalItems": true
+        },
+        "sdgs": {
+            "id": "#/properties/sdgs",
+            "type": "array",
+            "additionalItems": true
+        },
+        "service_industries": {
+            "id": "#/properties/service_industries",
+            "type": "array",
+            "additionalItems": true
+        },
+        "similarweb_12_months_growth_delta": {
+            "id": "#/properties/similarweb_12_months_growth_delta",
+            "type": "string"
+        },
+        "similarweb_12_months_growth_percentile": {
+            "id": "#/properties/similarweb_12_months_growth_percentile",
+            "type": "string"
+        },
+        "similarweb_12_months_growth_relative": {
+            "id": "#/properties/similarweb_12_months_growth_relative",
+            "type": "string"
+        },
+        "similarweb_12_months_growth_unique": {
+            "id": "#/properties/similarweb_12_months_growth_unique",
+            "type": "string"
+        },
+        "similarweb_3_months_growth_delta": {
+            "id": "#/properties/similarweb_3_months_growth_delta",
+            "type": "string"
+        },
+        "similarweb_3_months_growth_percentile": {
+            "id": "#/properties/similarweb_3_months_growth_percentile",
+            "type": "string"
+        },
+        "similarweb_3_months_growth_relative": {
+            "id": "#/properties/similarweb_3_months_growth_relative",
+            "type": "string"
+        },
+        "similarweb_3_months_growth_unique": {
+            "id": "#/properties/similarweb_3_months_growth_unique",
+            "type": "string"
+        },
+        "similarweb_6_months_growth_delta": {
+            "id": "#/properties/similarweb_6_months_growth_delta",
+            "type": "string"
+        },
+        "similarweb_6_months_growth_percentile": {
+            "id": "#/properties/similarweb_6_months_growth_percentile",
+            "type": "string"
+        },
+        "similarweb_6_months_growth_relative": {
+            "id": "#/properties/similarweb_6_months_growth_relative",
+            "type": "string"
+        },
+        "similarweb_6_months_growth_unique": {
+            "id": "#/properties/similarweb_6_months_growth_unique",
+            "type": "string"
+        },
+        "similarweb_chart": {
+            "id": "#/properties/similarweb_chart",
+            "type": "array",
+            "additionalItems": true
+        },
+        "sub_industries": {
+            "id": "#/properties/sub_industries",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "id": "#/properties/sub_industries/items",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "id": "#/properties/sub_industries/items/properties/id",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "id": "#/properties/sub_industries/items/properties/name",
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": true
+            }
+        },
+        "tags": {
+            "id": "#/properties/tags",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "id": "#/properties/tags/items",
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "id": "#/properties/tags/items/properties/id",
+                        "type": "integer"
+                    },
+                    "name": {
+                        "id": "#/properties/tags/items/properties/name",
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": true
+            }
+        },
+        "tagline": {
+            "id": "#/properties/tagline",
+            "type": "string"
+        },
+        "technologies": {
+            "id": "#/properties/technologies",
+            "type": "array",
+            "additionalItems": true
+        },
+        "total_funding": {
+            "id": "#/properties/total_funding",
+            "type": "integer"
+        },
+        "total_jobs_available": {
+            "id": "#/properties/total_jobs_available",
+            "type": "integer"
+        },
+        "trading_multiples": {
+            "id": "#/properties/trading_multiples",
+            "type": "string"
+        },
+        "type": {
+            "id": "#/properties/type",
+            "type": "string"
+        },
+        "tech_stack": {
+            "id": "#/properties/tech_stack",
+            "type": "array",
+            "additionalItems": true
+        },
+        "twitter_url": {
+            "id": "#/properties/twitter_url",
+            "type": "string"
+        },
+        "job_roles": {
+            "id": "#/properties/job_roles",
+            "type": "array",
+            "additionalItems": true
+        }
+    },
+    "additionalProperties": true
+}
