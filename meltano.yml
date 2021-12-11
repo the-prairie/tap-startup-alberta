@@ -11,9 +11,11 @@ plugins:
     - catalog
     - discover
     config:
-      token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlY29zeXN0ZW0uc3RhcnRhbGJlcnRhLmNhIiwiaXNzIjoiZGVhbHJvb20uY28iLCJpYXQiOjE2MzkwNzUyNzgsImV4cCI6MTY0MTc1MzY3OCwibmJmIjoxNjM5MDc1Mjc4LCJ1c2VySWQiOjM1ODcxOTF9.L3cwtmSj0Jbhbpmpi0FwiT4KWN-nVb5jiLGtQ41VMlY"
-      app_id: "250521027"
+      token: ${TAP_STARTUP_ALBERTA_TOKEN}
+      app_id: ${TAP_STARTUP_ALBERTA_APP_ID}
   loaders:
   - name: target-jsonl
     variant: andyh1203
     pip_url: target-jsonl
+    config:
+      destination_path: /Users/zar/Desktop/modern-data-stack/meltano_taps/tap-startup-alberta/tap_startup_alberta/output

@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from typing import Any, Dict, Optional, Union, List, Iterable
 
+from flatten_json import flatten
+
 from memoization import cached
 
 from singer_sdk.helpers.jsonpath import extract_jsonpath
@@ -109,5 +111,5 @@ class StartupStream(RESTStream):
 
     def post_process(self, row: dict, context: Optional[dict]) -> dict:
         """As needed, append or transform raw data to match expected structure."""
-        # TODO: Delete this method if not needed.
+        #row = flatten(row)
         return row
